@@ -24,7 +24,7 @@ namespace BD_of_the_Insurance_Company.Models
         public string Phone { get; set; }
         [Display(Name = "Паспортные данные")]
         public string Passport_data { get; set; }
-        [Display(Name = "Код должности")]
+        [Display(Name = "Должность")]
         public DbSet<Position> Position_ID { get; set; }
         [Display(Name = "Код должности")]
         public long PositionID { get; set; }

@@ -24,7 +24,7 @@ namespace BD_of_the_Insurance_Company.Models
         public string Phone { get; set; }
         [Display(Name = "Паспортные данные")]
         public string Passport_data { get; set; }
-        [Display(Name = "Код группы")]
+        [Display(Name = "Группа")]
         public DbSet<Groups> Groups_ID { get; set; }
         [Display(Name = "Код группы")]
         public long GroupsID { get; set; }

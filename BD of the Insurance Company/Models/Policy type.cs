@@ -18,17 +18,17 @@ namespace BD_of_the_Insurance_Company.Models
         public string Description { get; set; }
         [Display(Name = "Условия")]
         public string Conditions { get; set; }
-        [Display(Name = " Код риска 1")]
+        [Display(Name = "Риск 1")]
         public DbSet<Risks> Risks_ID1 { get; set; }
         [Display(Name = " Код риска 1")]
         public long RisksID1 { get; set; }
-        [Display(Name = " Код риска 2")]
+        [Display(Name = "Риск 2")]
         public DbSet<Risks> Risks_ID2 { get; set; }
-        [Display(Name = " Код риска 2")]
+        [Display(Name = " Код риска 1")]
         public long RisksID2 { get; set; }
-        [Display(Name = " Код риска 3")]
+        [Display(Name = "Риск 3")]
         public DbSet<Risks> Risks_ID3 { get; set; }
-        [Display(Name = " Код риска 3")]
+        [Display(Name = " Код риска 1")]
         public long RisksID3 { get; set; }
     }
 }
