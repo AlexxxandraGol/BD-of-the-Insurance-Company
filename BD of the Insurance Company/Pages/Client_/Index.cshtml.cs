@@ -21,12 +21,10 @@ namespace BD_of_the_Insurance_Company.Pages.Client_
 
         public IList<Client> Client { get;set; }
         public IList<Groups> Groups { get; set; }
-        public IList<Policies> Policies { get; set; }
         public async Task OnGetAsync()
         {
             Client = await _context.Client.ToListAsync();
             Groups = await _context.Groups.ToListAsync();
-            Policies = await _context.Policies.ToListAsync();
         }
     }
 }
