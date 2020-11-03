@@ -68,7 +68,7 @@
                 @{
                     try
                     {
-                        @Model.Policy.First(r => r.ID == item.Policy_typeID).Policy_type_name
+                        @Model.Policy_type.First(r => r.ID == item.Policy_typeID).Policy_type_name
                     }
                     catch
                     {

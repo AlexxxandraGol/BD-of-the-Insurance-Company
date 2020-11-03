@@ -1,0 +1,32 @@
+﻿@page
+@model BD_of_the_Insurance_Company.Pages.ZF.filters.C1ientModel
+@{
+    <h1>Список клиентов</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Client[0].Full_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Client[0].Groups_ID)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Client)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Full_name)
+                    </td>
+                    <td>
+                        @Model.Groups.Groups_name
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

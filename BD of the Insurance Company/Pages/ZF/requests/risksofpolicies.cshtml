@@ -1,0 +1,76 @@
+﻿@page
+@model BD_of_the_Insurance_Company.Pages.ZF.requests.risksofpoliciesModel
+@{
+    <h1>Риски полисов</h1>
+
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Policy_type[0].Policy_type_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Policy_type[0].Risks_ID1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Policy_type[0].Risks_ID2)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Policy_type[0].Risks_ID3)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Policy_type)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Policy_type_name)
+                    </td>
+                    <th>
+                        @{
+                            try
+                            {
+                                @Model.Risks.First(r => r.ID == item.RisksID1).Risks_name
+                            }
+                            catch
+                            {
+                                <p> данных нет </p>
+                            }
+                        }
+
+                    </th>
+                    <th>
+                        @{
+                            try
+                            {
+                                @Model.Risks.First(r => r.ID == item.RisksID2).Risks_name
+                            }
+                            catch
+                            {
+                                <p> данных нет </p>
+                            }
+                        }
+
+                    </th>
+                    <th>
+                        @{
+                            try
+                            {
+                                @Model.Risks.First(r => r.ID == item.RisksID3).Risks_name
+                            }
+                            catch
+                            {
+                                <p> данных нет </p>
+                            }
+                        }
+
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,5 +20,6 @@ namespace BD_of_the_Insurance_Company.Models
         public string Responsibilities { get; set; }
         [Display(Name = "Требования")]
         public string Requirements { get; set; }
+        
     }
 }

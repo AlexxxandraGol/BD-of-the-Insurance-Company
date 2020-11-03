@@ -19,25 +19,41 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Stuffs/Index">Сотрудники</a>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Сотрудники
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Stuffs/Index">Сотрудники</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Position_/Index">Должности</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Risks_/Index">Риски</a>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Полисы
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Policies_/Index">Полисы</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Risks_/Index">Риски</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Policy/Index">Виды полисов</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Position_/Index">Должности</a>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Клиенты
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Groups_/Index">Группы клиентов</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Client_/Index">Клиенты</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Policy/Index">Виды полисов</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Policies_/Index">Полисы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Groups_/Index">Группы клиентов</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Client_/Index">Клиенты</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ZF/Index">Запросы и фильтры</a>
                         </li>
                     </ul>
                 </div>

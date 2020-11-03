@@ -1,0 +1,35 @@
+﻿@page
+@model BD_of_the_Insurance_Company.Pages.ZF.filters.PoliciesTypeModel
+@{
+    <h1>Список полисов</h1>
+
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Policies[0].Policies_ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Policies[0].Policy_type_ID)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Policies)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Policies_ID)
+                    </td>
+                    <td>
+                        @Model.Policy.Policy_type_name
+
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -24,11 +24,11 @@ namespace BD_of_the_Insurance_Company.Models
         public long RisksID1 { get; set; }
         [Display(Name = "Риск 2")]
         public DbSet<Risks> Risks_ID2 { get; set; }
-        [Display(Name = " Код риска 1")]
+        [Display(Name = " Код риска 2")]
         public long RisksID2 { get; set; }
         [Display(Name = "Риск 3")]
         public DbSet<Risks> Risks_ID3 { get; set; }
-        [Display(Name = " Код риска 1")]
+        [Display(Name = " Код риска 3")]
         public long RisksID3 { get; set; }
     }
 }
