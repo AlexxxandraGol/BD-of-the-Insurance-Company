@@ -59,16 +59,16 @@
 
                     <form>
                         Отобразить полисы, по которым производились (не производились) выплаты:
-                        <select asp-items="Model.Mark" name="id" class="form-control-sm">
+                        <select asp-items="Model.Mark" name="Mark" class="form-control-sm">
                             <option value="-1">не выбран</option>
                         </select>
-                        <button asp-page="filters/PoliciesMark" class="btn btn-primary">Отфильтровать</button>
+                        <button asp-page="filters/PayMark" class="btn btn-primary">Отфильтровать</button>
                     </form>
                     <br />
 
                     <form>
                         Отобразить оконченные (неоконченные) полисы:
-                        <select asp-items="Model.Data" name="id" class="form-control-sm">
+                        <select asp-items="Model.Data" name="End" class="form-control-sm">
                             <option value="-1">не выбран</option>
                         </select>
                         <button asp-page="filters/PoliciesData" class="btn btn-primary">Отфильтровать</button>
